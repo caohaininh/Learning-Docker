@@ -4,7 +4,6 @@
 
 
 ## **Requirements & Tools**
----
 - **PHP** version **8.0+**.
 - PHP **Composer**.
 - **Webserver** Nginx.
@@ -12,7 +11,6 @@
 - DB UI management **Adminer**.
 
 ## Setup
----
 **Step1** : Create **Dockerfile**
 + Use docker image config for **Dockerfile**
 + Install **PHP Composer**
@@ -26,15 +24,10 @@
 + **Adminer** DB UI management service.
 
 **Step4** : Create **.docker** folder, store db data and services config files
-- config webserver nginx.
-- create folder for database mount volumn data.
-- run project:
-+ pull source code
-+ docker-compose up
-+ run composer install: docker-compose exec app composer install
-+ generate app key: docker-compose exec app php artisan key:generate
-+ 
-**Step4** : Run project
++ config webserver nginx.
++ create folder for database mount volumn data.
+   
+**Step5** : Run project
 + Clone source code.
 + Copy **.env** file:
     ```
@@ -65,3 +58,12 @@
   ```
   docker-compose exec php artisan key:generate
   ```
+
+**Step6** :
++ Project address:
+    ```
+    http://localhost:4444/
++ Database management address:
+    ```
+    http://localhost:8080/
+    ```
